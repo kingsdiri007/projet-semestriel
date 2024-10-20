@@ -1,0 +1,798 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Protest+Strike&display=swap');
+/*index css*/
+body {
+  background-image: url(../assets/background.png);
+    background-size: 100%;
+    background-color: #182331;
+    background-attachment: fixed;
+    font-family: "Roboto Slab", serif;
+    color: gold;
+    margin: 0;
+
+}/*header css*/
+header {
+    display: flex;
+    background-color: #020d1c;
+    list-style: none;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;   
+    zoom: 1.4; 
+}
+a{
+    text-decoration: none;
+    color:gold;
+}
+ul{
+    color:#0f2438 ;
+    background-color: #408296;
+    border: 2px solid #303c47;
+    border-radius: 20px;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    padding-right:10px;
+    padding-left: 20px;
+}
+/*hero section css*/
+#hero {
+
+    color: #ffffff;
+    justify-content: center;
+    padding:  0;
+    position: relative; 
+
+}
+.hero-image {
+    width: 100%;
+
+
+position: relative;
+height: 500px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 30%;
+    height: 70%;
+    margin: 0;
+
+    zoom: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+.hero-button {
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-left:70px;
+    
+}
+.hero-button:hover{
+    transform: scale(1.15); /* Enlarge the card by 5% */
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5); /* Add a glowing shadow */
+}
+.game__screenshots {
+    margin-bottom: 20px;
+}
+
+.game__screenshots-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game__movie {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+
+.game-card-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.game-card-video__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.game-card-video-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.game__screenshots-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.game__screenshots-item {
+    flex: 1 1 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    cursor: pointer;
+}
+
+.game__screenshot-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.game-info {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.video-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.video-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.video-controls button img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.video-controls button:hover img {
+    opacity: 1;
+}
+
+/* Game info and buy button */
+.game-info {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/*footer css*/
+footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* Footer styles */
+    display: flex;
+    background-color: #120026;
+    list-style: none;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;   
+    zoom: 1.4; 
+}
+/*login screen*/
+form {
+    
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #303943;
+    border-radius: 10px;
+}
+
+input {
+    
+    width: 60%;
+    height: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d5c7e;
+    color: #ffffff;
+}
+#login-button {
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+    cursor: pointer;
+    margin-left:35%;
+    font-family: "Roboto Slab", serif;
+    
+}
+#login-button:hover{
+    transform: scale(1.15); /* Enlarge the card by 5% */
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5); /* Add a glowing shadow */
+}
+
+/*cart page*/#cart-items {
+  list-style: none; /* Remove default bullets */
+  padding:0 ;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+#cart-items li {
+  width: 250px;
+
+  margin:10px ;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color:  #408296;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#cart-items li img {
+width: 250px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+#cart-items li p::after {
+    content: '$';
+    font-weight: bold;
+    margin-left: 5px; /* Adjust the margin as needed */
+  }
+
+#cart-items li h3 {
+    text-shadow: 5px 0 5px rgba(0, 0, 0); 
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#cart-items li p {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 5px 0 5px rgba(0, 0, 0); 
+}
+
+#total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#cart #checkout-button{
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+    margin-bottom: 10px;
+font-weight:bold;
+    margin-left:46%;
+}
+#cart .cancel-button{
+    align-items: center;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 15px 30px;
+    border:5px solid black;
+    border-radius: 10%;
+font-weight:bold;
+    
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Loading Spinner */
+#loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Main container styles */
+#game-details {
+    max-width: 1500px;
+
+
+    color: white;
+}
+
+.game-title {
+    font-family: "Protest Strike", sans-serif;
+    text-align: center;
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Trailer section */
+.game-trailer {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#textgametrailer {
+    font-family: "Protest Strike", sans-serif;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#trailer {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Screenshots section */
+.screenshots-section {
+    margin: 40px 0;
+}
+
+.screenshots-section h2 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game__screenshots {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.game__screenshots-inner {
+    width: 100%;
+}
+
+.game__screenshots-list {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.game__screenshots-item {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 225px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.game__screenshots-item:hover {
+    transform: scale(1.05);
+}
+
+.game__screenshot-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* About section */
+.about-section {
+    background: rgba(128, 128, 128, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.about-section h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+/* Game info section */
+.game-info {
+    background: rgba(128, 128, 128, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Website link */
+.website-link {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.website-link a {
+    color: #FFD700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.website-link a:hover {
+    color: #FFA500;
+}
+.game-trailer {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#textgametrailer {
+    font-family: "Protest Strike", sans-serif;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-error {
+    color: #ff6b6b;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Screenshots section */
+.screenshots-section {
+    margin: 40px 0;
+}
+
+.screenshots-section h2 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game__screenshots {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.game__screenshots-inner {
+    width: 100%;
+}
+
+.game__screenshots-list {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.game__screenshots-item {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 225px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.game__screenshots-item:hover {
+    transform: scale(1.05);
+}
+
+.game__screenshot-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* About section */
+.about-section {
+    background: rgba(128, 128, 128, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.about-section h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+/* Game info section */
+.game-info {
+    background: rgba(128, 128, 128, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Website link */
+.website-link {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.website-link a {
+    color: #FFD700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.website-link a:hover {
+    color: #FFA500;
+}
+
+.error-message {
+    color: #ff6b6b;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}.load-more-container {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.load-more-btn {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #45a049;
+}
+
+.load-more-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.error-message {
+    text-align: center;
+    color: #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}/*games list css*/
+#game-list table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 10px solid red;
+}
+
+#game-list th,
+#game-list td {
+    border: 10px solid red;
+   
+    text-align: center;
+
+}
+
+#game-list img {
+    width: 150px;
+    height: 200px;
+}
+tr img:hover{
+        transform: scale(1.15); /* Enlarge the card by 5% */
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5); /* Add a glowing shadow */
+
+}
+* Screenshots section */
+.screenshots-section {
+    margin: 40px 0;
+}
+
+.screenshots-section h2 {
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game__screenshots {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.game__screenshots-inner {
+    width: 100%;
+}
+
+.game__screenshots-list {
+    display: flex;
+    overflow-x: auto;
+}
+
+.game__screenshots-item {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 225px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.game__screenshots-item:hover {
+    transform: scale(1.05);
+}
+
+.game__screenshot-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.game__screenshot-image:hover {
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1);
+}
+
+#search-infos{
+   justify-content: center;
+}
+#search-input, #genre-select {
+    color: #000; /* Change the text color */
+    font-size: 16px; /* Change the font size */
+    
+}
+#genre-select { 
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d5c7e;
+    color: #ffffff;
+}
+
+
+#search-form button:hover {
+    background-color: #3e8e41;
+}
